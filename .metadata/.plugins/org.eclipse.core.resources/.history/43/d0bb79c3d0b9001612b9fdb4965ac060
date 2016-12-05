@@ -1,0 +1,5 @@
+package br.com.cidade.repository;
+
+public interface AddressRepository {
+	public AddressBean findByZipCode(CEPBean cep)
+}

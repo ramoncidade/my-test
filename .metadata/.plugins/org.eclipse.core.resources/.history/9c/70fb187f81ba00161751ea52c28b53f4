@@ -1,0 +1,18 @@
+package br.com.cidade.stream;
+
+public interface Stream {
+
+	/**
+	 * Return the next available char
+	 * 
+	 * @return next available char
+	 */
+	char getNext();
+
+	/**
+	 * Return if there is a next available char
+	 * 
+	 * @return if has or no a next char
+	 */
+	boolean hasNext();
+}

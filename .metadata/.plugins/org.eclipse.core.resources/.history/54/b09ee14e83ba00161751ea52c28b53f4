@@ -1,0 +1,15 @@
+package br.com.cidade.stream;
+
+
+public class StreamExecutionTest {
+
+	
+	public static void main(String[] args) {
+		Stream stream = new StreamImpl(args[0]);
+		char result;
+		while(stream.hasNext()){
+			result = stream.getNext();
+		}
+		System.out.println("Encontrado: "+result);
+	}
+}

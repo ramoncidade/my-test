@@ -1,0 +1,41 @@
+package br.com.cidade.configuration;
+
+import org.apache.commons.dbcp.BasicDataSource;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
+
+public class MySqlDataSource {
+	@Value("#{environment.dbDriver}")
+	private String dbDriver;
+
+	@Value("#{environment.dbUrl}")
+	private String dbUrl;
+
+	@Value("#{environment.dbUsername}")
+	private String dbUsername;
+
+	@Value("#{environment.dbPassword}")
+	private String dbPassword;
+
+	@Value("#{environment.dbPoolInitialSize}")
+	private Integer dbPoolInitialSize;
+
+	@Value("#{environment.dbPoolMaxActive}")
+	private Integer dbPoolMaxActive;
+
+	@Bean
+	@Profile(Profiles.PRODUCTION)
+	public BasicDataSource dataSource() {
+		BasicDataSource ds = new BasicDataSource();
+		ds.setDriverClassName(dbDriver);
+		ds.setUrl(dbUrl);
+		ds.setUsername(dbUsername);
+		ds.setPassword(dbPassword);
+		ds.setInitialSize(dbPoolInitialSize);
+		ds.setMaxActive(dbPoolMaxActive);
+
+		return ds;
+	}
+
+}

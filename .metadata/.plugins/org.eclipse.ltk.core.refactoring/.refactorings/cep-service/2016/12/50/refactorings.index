@@ -1,0 +1,22 @@
+1480818458851	Extract constant 'REST_ADDRESS'
+1480819091864	Move compilation unit
+1480819177032	Copy compilation unit
+1480819330084	Rename type 'Address'
+1480821681036	Rename type 'CEPBean'
+1480823379475	Rename local variable 'adrress1'
+1480824170121	Rename package 'br.com.cidade.bussiness'
+1480824179881	Rename type 'AddressSearchBussiness'
+1480824190708	Rename type 'AddressSearchBussinessImpl'
+1480824792538	Encapsulate field 'content'
+1480824797831	Encapsulate field 'message'
+1480825009097	Extract constant 'ADDRESS_NOT_FOUND'
+1480825185630	Extract constant 'CEP_INVÁLIDO'
+1480826344894	Delete elements
+1480827053698	Rename type 'CepServiceApplicationTests'
+1480827062158	Rename type 'AddressSearchControllerIntegrationTest'
+1480831780646	Rename local variable 'inexistentCep'
+1480831790166	Rename local variable 'address1'
+1480831862410	Rename local variable 'address2'
+1480888773030	Copy package
+1480893017455	Copy compilation unit
+1480893742128	Copy package

@@ -1,0 +1,32 @@
+package br.com.cidade.controller;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.cidade.business.AddressBusiness;
+import br.com.cidade.entity.AddressEntity;
+
+@RestController
+@RequestMapping(path = AddressController.BASE_PATH, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+public class AddressController {
+	
+	static final String BASE_PATH = "/rest/address";
+	
+	private AddressBusiness business;
+	
+	public AddressController(AddressBusiness business) {
+		this.business = business;
+	}
+	
+	@GetMapping
+	public void get(Pageable page){
+		Page<AddressEntity> result;
+		result
+		return new responseEn
+	}
+
+}

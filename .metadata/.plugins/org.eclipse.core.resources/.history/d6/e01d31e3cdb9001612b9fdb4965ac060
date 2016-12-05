@@ -1,0 +1,9 @@
+package br.com.cidade.bussiness;
+
+public interface AddressSearchBussiness {
+	
+	public Boolean isValidCEP(String CEP);
+	
+	public Address findAddressByCEP(String CEP);
+
+}

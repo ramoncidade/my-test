@@ -1,0 +1,40 @@
+package br.com.cidade.business;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+
+import br.com.cidade.entity.AddressEntity;
+import br.com.cidade.repository.AddressRepository;
+
+public class AddressBusinessImpl implements AddressBusiness {
+	
+	private AddressRepository repository;
+
+	@Autowired
+	public AddressBusinessImpl(AddressRepository repository) {
+		this.repository = repository;
+	}
+
+	@Override
+	public AddressEntity findOne(AddressEntity address) {
+		return this.repository.findOne(address.getId());
+	}
+
+	@Override
+	public Page<AddressEntity> findAll(Pageable page) {
+		return repository.findAll(page);
+	}
+
+	@Override
+	public AddressEntity save(AddressEntity address) {
+		return this.repository.save(address);
+	}
+
+	@Override
+	public void delete(AddressEntity address) {
+		this.repository.delete(address.getId());
+	}
+
+}

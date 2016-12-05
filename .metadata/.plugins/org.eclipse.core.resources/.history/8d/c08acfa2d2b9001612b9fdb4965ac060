@@ -1,0 +1,16 @@
+package br.com.cidade.repository;
+
+import br.com.cidade.bean.AddressBean;
+import br.com.cidade.bean.ZipcodeBean;
+
+public class MockAddressRepository implements AddressRepository {
+	
+	Map<String,AddressBean> data;
+
+	@Override
+	public AddressBean findByZipCode(ZipcodeBean zipcode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

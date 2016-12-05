@@ -1,0 +1,27 @@
+package br.com.cidade.bean;
+
+public class CEPBean {
+	Boolean valid;
+	String value;
+	
+	public CEPBean(String value){
+		if(value != null){
+			
+		}else{
+			valid = false;
+		}
+	}
+	
+	public Boolean getValid() {
+		return valid;
+	}
+	public void setValid(Boolean valid) {
+		this.valid = valid;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+}

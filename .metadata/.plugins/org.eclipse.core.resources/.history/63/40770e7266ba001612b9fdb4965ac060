@@ -1,0 +1,39 @@
+package br.com.cidade.business;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.cidade.entity.AddressEntity;
+import br.com.cidade.repository.AddressRepository;
+
+public class AddressBusinessImpl implements AddressBusiness {
+	
+	@Autowired
+	public public AddressBusinessImpl(AddressRepository repository) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public AddressEntity findOne(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AddressEntity findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AddressEntity save(AddressEntity address) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(AddressEntity address) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package br.com.cidade;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+/**
+ * Controller para consulta de endereço por CEP
+ * @author ramoncidade
+ *
+ */
+@RestController
+@RequestMapping(path=AddressSearchController.BASE_PATH,consumes=MediaType.APPLICATION_JSON_UTF8_VALUE,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+public class AddressSearchController {
+
+	static final String BASE_PATH = "/rest/address";
+
+}

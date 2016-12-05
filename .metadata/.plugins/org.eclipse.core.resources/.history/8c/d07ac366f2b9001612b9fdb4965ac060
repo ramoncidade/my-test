@@ -1,0 +1,6 @@
+package br.com.cidade.configuration;
+
+public enum Profiles {
+	String PRODUCTION = "PRODUCTION";
+	String DEV = "DEV";
+}

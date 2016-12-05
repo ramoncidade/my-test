@@ -1,0 +1,29 @@
+package br.com.cidade.repository;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import br.com.cidade.bean.AddressBean;
+import br.com.cidade.bean.ZipcodeBean;
+
+public class MockAddressRepository implements AddressRepository {
+	
+	Set<String,AddressBean> data;
+	
+	public MockAddressRepository(){
+		data = new HashSet()
+		AddressBean adrress1 = new AddressBean();
+		adrress1.setCity("Mogi das Cruzes");
+		adrress1.setNeighborhood("Centro");
+		adrress1.setState("SP");
+		adrress1.setStreet("Rua Hamilton da Silva e Costa");
+		adrress1.setZipcode("08773150");
+		data
+	}
+
+	@Override
+	public AddressBean findByZipCode(ZipcodeBean zipcode) {
+		return data.get(zipcode.getValue());
+	}
+
+}

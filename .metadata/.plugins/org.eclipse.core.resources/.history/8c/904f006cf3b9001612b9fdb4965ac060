@@ -1,0 +1,7 @@
+spring.profiles.active=production
+mysqlds.dbDriver=
+mysqlds.dbUrl=
+mysqlds.dbUsername=
+mysqlds.dbPassword=
+mysqlds.dbPoolInitialSize=
+mysqlds.dbPoolMaxActive=

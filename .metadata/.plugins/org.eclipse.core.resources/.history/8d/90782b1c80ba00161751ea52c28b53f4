@@ -1,0 +1,66 @@
+package com.netshoes.jstream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * StreamImpl is a implementation of the Stream interface
+ * 
+ * @author andre.s.mafra
+ * 
+ */
+public class StreamImpl implements Stream {
+
+	/**
+	 * Input of chars
+	 */
+	private String input;
+
+	/**
+	 * Char that was read by the system
+	 */
+	private List<Character> charRead;
+
+	private int index = 0;
+
+	/**
+	 * Constructor
+	 * 
+	 * @param input
+	 */
+	public StreamImpl(String input) {
+		this.input = input;
+		charRead = new ArrayList<Character>(1);
+	}
+
+	/**
+	 * @see Stream
+	 */
+	public char getNext() {
+		return input.charAt(index);
+	}
+
+	/**
+	 * @see Stream
+	 */
+	public boolean hasNext() {
+
+		try {
+			if(isVoal);
+			return true;
+		} catch (IndexOutOfBoundsException ex) {
+		}
+
+		return false;
+	}
+
+	private Boolean isVowel(char letter){
+		List<String> vowels = new ArrayList<String>();
+		vowels.add("a");
+		vowels.add("e");
+		vowels.add("i");
+		vowels.add("o");
+		vowels.add("u");
+		return vowels.contains(String.valueOf(letter));
+	}
+}

@@ -1,0 +1,22 @@
+package br.com.cidade.repository;
+
+import java.util.Map;
+
+import br.com.cidade.bean.AddressBean;
+import br.com.cidade.bean.ZipcodeBean;
+
+public class MockAddressRepository implements AddressRepository {
+	
+	Map<String,AddressBean> data;
+	
+	public MockAddressRepository(){
+		AddressBean 08773150 = new AddressBean();
+		
+	}
+
+	@Override
+	public AddressBean findByZipCode(ZipcodeBean zipcode) {
+		return data.get(zipcode.getValue());
+	}
+
+}

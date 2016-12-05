@@ -1,0 +1,7 @@
+spring.profiles.active=production
+mysqlds.dbDriver=com.mysql.jdbc.Driver
+mysqlds.dbUrl=jdbc:mysql://127.0.0.1:3306/myappdatabase
+mysqlds.dbUsername=root
+mysqlds.dbPassword=123456
+mysqlds.dbPoolInitialSize=2
+mysqlds.dbPoolMaxActive=10

@@ -1,0 +1,29 @@
+**CEP Service**
+===========
+**Tecnologias utilizadas:**
+- Java 8
+- Spring Boot
+- Maven
+- Spring Initializer para scaffolding do projeto: http://start.spring.io/starter.zip?type=maven-project&bootVersion=1.4.2.RELEASE&baseDir=cep-service&groupId=br.com.cidade&artifactId=cep-service&name=cep-service&description=Servi%C3%A7o+para+consulta+de+endere%C3%A7os&packageName=br.com.cidade&packaging=war&javaVersion=1.8&language=java&autocomplete=&style=web&style=freemarker&generate-project=
+- Por ser uma aplicação spring-boot pode ser usada em um container como Tomcat ou diretamente na linha comando
+- Para teste utilize o comando `mvn test spring-boot:run`, para que sejam executados os testes de integração e a aplicação permaneça
+   rodando na porta 8080 por padrão.
+
+**CRUD Service**
+===========
+**Tecnologias utilizadas:**
+- Java 8
+- Spring Boot
+- Mysql
+- H2
+- Maven
+- Spring Initializer para scaffolding do projeto: http://start.spring.io/starter.zip?type=maven-project&bootVersion=1.4.2.RELEASE&baseDir=cep-service&groupId=br.com.cidade&artifactId=cep-service&name=cep-service&description=Servi%C3%A7o+para+consulta+de+endere%C3%A7os&packageName=br.com.cidade&packaging=war&javaVersion=1.8&language=java&autocomplete=&style=web&style=freemarker&generate-project=
+- Por ser uma aplicação spring-boot pode ser usada em um container como Tomcat ou diretamente na linha comando
+- Existem dois profiles configurados no maven, que também alteram o profile do spring; O profile development, ativo por padrão, utiliza base de dados virtual H2; O profile production utiliza um banco de dados mysql, configurado local, é possivel alterar os dados de conexão dentro da pasta do profile. Existe um arquivo db.sql para auxiliar na criação das tabelas
+- Para teste utilize o comando `mvn test spring-boot:run`, para que sejam executados os testes de integração e a aplicação permaneça executando na porta 8080 por padrão.
+
+**Stream Validator**
+===========
+**Tecnologias utilizadas:**
+- Java 8
+- Para testar utilize o jar pré compilado com java -jar stream-validator.jar STREAM_A_SER_VALIDADO

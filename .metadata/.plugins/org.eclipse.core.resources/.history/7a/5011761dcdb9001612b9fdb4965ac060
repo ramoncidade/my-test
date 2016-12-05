@@ -1,0 +1,35 @@
+package br.com.cidade.bean;
+
+public class CEPBean {
+	Boolean valid;
+	String value;
+	
+	public CEPBean(String value){
+		if(value != null){
+			if(value.contains("-")){
+				value = value.replace("-", "");
+			}
+			//Verificar se contém apenas números
+			if(valid = value.length() == 8){
+				valid = !value.matches("[0-9]+");
+			}else{
+				
+			}
+		}else{
+			valid = false;
+		}
+	}
+	
+	public Boolean isValid() {
+		return valid;
+	}
+	public void setValid(Boolean valid) {
+		this.valid = valid;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+}

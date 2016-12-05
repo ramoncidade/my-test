@@ -1,0 +1,11 @@
+package br.com.cidade.business;
+
+import br.com.cidade.entity.AddressEntity;
+
+public interface AddressBusiness {
+	public AddressEntity findOne(Long id);
+	public AddressEntity findAll();
+	public AddressEntity save(AddressEntity address);
+	public void delete(AddressEntity address);
+	
+}

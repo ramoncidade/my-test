@@ -1,0 +1,28 @@
+package br.com.cidade.controller;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+/**
+ * Controller para consulta de endereço por CEP
+ * Como retorno é a entidade Address (Endereço) e não o CEP, nomeei o recurso como address
+ * e vou tratar o CEP apenas como filtro de busca 
+ * @author ramoncidade
+ *
+ */
+@RestController
+@RequestMapping(path=AddressSearchController.BASE_PATH,consumes=MediaType.APPLICATION_JSON_UTF8_VALUE,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+public class AddressSearchController {
+
+	static final String BASE_PATH = "/rest/address";
+
+	/**
+	 * Endpoint para busca de um endereço a partir de um CEP válido
+	 */
+	@GetMapping
+	public void findAddressByCEP(@RequestParam(name="cep",required=true)String cep){
+		
+	}
+}

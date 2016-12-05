@@ -1,0 +1,6 @@
+package br.com.cidade.bean.utils;
+
+public class GenericResponse<T> {
+	public GenericResponse<T>(T t){}
+	public GenericResponse<T>(T t,String message){}
+}
