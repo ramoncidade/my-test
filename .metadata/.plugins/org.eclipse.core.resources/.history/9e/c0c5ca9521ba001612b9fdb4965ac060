@@ -1,7 +1,0 @@
-spring.profiles.active=production
-mysqlds.dbDriver=com.mysql.jdbc.Driver
-mysqlds.dbUrl=jdbc:mysql://mysql.hostinger.com.br:3306/u339404995_myapp
-mysqlds.dbUsername=u339404995_user
-mysqlds.dbPassword=SLWFfkWg7quSUvjF
-mysqlds.dbPoolInitialSize=
-mysqlds.dbPoolMaxActive=

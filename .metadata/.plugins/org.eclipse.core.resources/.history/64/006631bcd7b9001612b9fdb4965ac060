@@ -1,5 +1,0 @@
-package br.com.cidade.bean.utils;
-
-public <T> class GenericResponse {
-
-}
