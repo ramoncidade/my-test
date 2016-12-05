@@ -31,10 +31,12 @@
 
 **O que acontece quando acesso uma URL?**
 ===========
+
 Quando acesso uma URL, é gerada uma requisição HTTP que segue basicamente o seguinte caminho:
-	- O endereço é convertido para o IP corresponde por um serviço DNS
-	- A requisição pode cair em uma camada de cache e retornar o conteudo para o usuário imediatamente
-	- Caso não encontre cache, a requisição chega à um balanceador de carga, um serviço responsável por distribuir requisições entre um ou mais servidores, e é direcionada à um dos servidores
-	- Chegando ao servidor/container a requisição é tratada para o que o componente responsável por responder aquela URL seja encontrado. Caso não seja encontrado geralmente é retornada uma resposta com status 404, pode ser encontrado também um redirecionamento 3xx.
-	- Encontrado o componente o código Server-Side é executado, ou apenas um arquivo é "servido" e uma resposta é enviada de volta ao navegador do usuário.
-	- De volta ao navegador do usuário ainda é possivel que seja executado código Client-Side, até que a completa renderização da paǵina seja concluída
+- O endereço é convertido para o IP corresponde por um serviço DNS
+- A requisição pode cair em uma camada de cache e retornar o conteudo para o usuário imediatamente
+- Caso não encontre cache, a requisição chega à um balanceador de carga, um serviço responsável por distribuir requisições entre um ou mais servidores, e é direcionada à um dos servidores
+- Chegando ao servidor/container a requisição é tratada para o que o componente responsável por responder aquela URL seja encontrado. Caso não seja encontrado geralmente é retornada uma resposta com status 404, pode ser encontrado também um redirecionamento 3xx.
+- Encontrado o componente o código Server-Side é executado, ou apenas um arquivo é "servido" e uma resposta é enviada de volta ao navegador do usuário.
+- De volta ao navegador do usuário ainda é possivel que seja executado código Client-Side, até que a completa renderização da paǵina seja concluída
+	
